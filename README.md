@@ -1,27 +1,21 @@
-# React + TypeScript + Vite
+# React + TypeScript + Vite + React Hook Form + Context API
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Durante este desafio, aplicamos conceitos mais avançados para desenvolver do zero uma aplicação de encomenda de cafés. A aplicação possui três telas: a primeira é uma tela de apresentação que lista os cafés disponíveis; a segunda contém um formulário onde o usuário preenche seus dados de endereço, com uma visualização à direita dos itens no carrinho, permitindo alterar quantidades ou remover itens; e a terceira e última tela exibe a confirmação do pedido e os detalhes da entrega.
 
-Currently, two official plugins are available:
+🛠️ Nesse projeto foi utilizado
+- Vite
+- Typescript
+- Styled Components
+- Validações de formulário com Zod
+- React Hook Form
+- Context API
+- React Router Dom
+- Local Storage
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+Rodar o projeto
+```bash
+  git clone https://github.com/fbcavalheiro/React-coffee-delivery.git
+  cd React-coffee-delivery
+  npm install
+  npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
